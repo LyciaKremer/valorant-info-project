@@ -9,9 +9,9 @@ const Agents = () => {
   const [agent, setAgent] = useState<any[]>([])
 
   const getAgent = async () => {
-    const response = await http.get('https://valorant-api.com/v1/agents')
+    const response = await http.get('/agents')
     setAgent(response.data.data)
-    console.log(response.data)
+    console.log(response.data.data)
   }
 
   useEffect(() => {
@@ -22,13 +22,15 @@ const Agents = () => {
     <>
       <S.Section>
         <Container>
-          {agent?.map(item => (
-            <CardAgent
-              key={item.uuid}
-              name={item.displayName}
-              description={item.description}
-            />
-          ))}
+          {agent &&
+            agent?.map(item => (
+              <CardAgent
+                key={item?.uuid}
+                name={item?.displayName}
+                description={item?.description}
+                image={item?.bustPortrait}
+              />
+            ))}
         </Container>
       </S.Section>
     </>

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { breakpoints, sizes } from '../../styles/breakpoints'
+// import { breakpoints, sizes } from '../../styles/breakpoints'
 
 export const Card = styled.div`
   display: flex;
