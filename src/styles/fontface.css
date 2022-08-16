@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Airbnb"), local("AIRBNBCEREALLIGHT"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALLIGHT.TTF") format("truetype")
+}
+
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Airbnb"), local("AIRBNBCEREALBOOK"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALBOOK.TTF") format("truetype")
+}
+
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Airbnb"), local("AIRBNBCEREALMEDIUM"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALMEDIUM.TTF") format("truetype")
+}
+
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: bold;
+  src: local("Airbnb"), local("AIRBNBCEREALBOLD"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALBOLD.TTF") format("truetype")
+}
+
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Airbnb"), local("AIRBNBCEREALEXTRABOLD"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALEXTRABOLD.TTF") format("truetype")
+}
+
+@font-face {
+  font-family: "Airbnb";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Airbnb"), local("AIRBNBCEREALBLACK"),
+    url("../../public/fonts/airbnb-cereal/AIRBNBCEREALBLACK.TTF") format("truetype")
+}
+
+
+body {
+  font-family: Airbnb !important;
+  font-weight: 400;
+  font-size: 100%;
+  background-color: transparent;
+}
