@@ -20,19 +20,15 @@ const Agents = () => {
 
   return (
     <>
-      <S.Section>
-        <Container>
-          {agent &&
-            agent?.map(item => (
-              <CardAgent
-                key={item?.uuid}
-                name={item?.displayName}
-                description={item?.description}
-                image={item?.bustPortrait}
-              />
-            ))}
-        </Container>
-      </S.Section>
+      {agent &&
+        agent?.map(item => (
+          <CardAgent
+            key={item?.uuid}
+            name={item?.displayName}
+            description={item?.description}
+            image={item?.bustPortrait}
+          />
+        ))}
     </>
   )
 }

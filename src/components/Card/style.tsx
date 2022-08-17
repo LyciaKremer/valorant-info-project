@@ -11,7 +11,7 @@ export const Card = styled.div`
   border-width: 0.063rem;
   border-color: ${({ theme }) => theme.colors.grayLight2};
   background: ${({ theme }) => theme.colors.background};
-  max-width: 23.813rem;
+  max-width: 20.813rem;
   margin-top: 20px;
   flex-direction: column;
 `
