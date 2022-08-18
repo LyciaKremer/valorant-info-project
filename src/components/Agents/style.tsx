@@ -16,3 +16,27 @@ export const Section = styled.section`
     flex-direction: column;
   }
 `
+export const Carousel = styled.div`
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`
+export const Buttons = styled.div`
+  display: flex;
+  border: none;
+  justify-content: center;
+  cursor: pointer;
+  :first-child img {
+    transform: rotate(180deg);
+  }
+`
+export const Icon = styled.div`
+  font-size: 50px;
+  color: ${({ theme }) => theme.colors.white};
+  border: none;
+  cursor: pointer;
+`

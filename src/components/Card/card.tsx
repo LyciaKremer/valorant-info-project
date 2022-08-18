@@ -15,7 +15,7 @@ const CardAgent = (props: CardProps) => {
         <S.Box>
           <S.Item>
             {props.image && (
-              <Image src={props.image} alt="agent" width={200} height={300} />
+              <Image src={props.image} alt="agent" width={337} height={337} />
             )}
             <S.Name>{props.name}</S.Name>
             <S.Description>{props.description}</S.Description>

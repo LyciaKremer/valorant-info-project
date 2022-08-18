@@ -3,7 +3,6 @@ import { Container } from 'react-bootstrap'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import Agents from '../Agents'
 import * as S from './style'
 
 const FirstSection = () => {
@@ -24,7 +23,6 @@ const FirstSection = () => {
             </S.Infos>
             <Image src="/trio-agentes.png" alt="img" width={789} height={704} />
           </S.Content>
-          <Agents />
         </Container>
       </S.Section>
     </>

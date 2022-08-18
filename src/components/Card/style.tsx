@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-// import { breakpoints, sizes } from '../../styles/breakpoints'
+import { breakpoints, sizes } from '../../styles/breakpoints'
 
 export const Card = styled.div`
   display: flex;
@@ -11,9 +11,17 @@ export const Card = styled.div`
   border-width: 0.063rem;
   border-color: ${({ theme }) => theme.colors.grayLight2};
   background: ${({ theme }) => theme.colors.background};
-  max-width: 23.813rem;
+  max-width: 20.813rem;
+  min-width: 20rem;
   margin-top: 20px;
   flex-direction: column;
+
+  @media ${breakpoints.lessThan(sizes.widescreen)} {
+    min-width: 20rem;
+  }
+  @media ${breakpoints.lessThan(sizes.tablet)} {
+    min-width: 15rem;
+  }
 `
 export const Box = styled.div`
   display: flex;
