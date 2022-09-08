@@ -13,7 +13,8 @@ export const Footer = styled.footer`
   color: ${props => props.theme.colors.background};
   padding: 5rem 14vw;
   gap: 100%;
-  background: ${props => props.theme.colors.darkRed};
+  background: ${props => props.theme.colors.black};
+  border-top: 1px solid #181818;
 
   @media ${breakpoints.lessThan(sizes.desktop)} {
     display: flex;

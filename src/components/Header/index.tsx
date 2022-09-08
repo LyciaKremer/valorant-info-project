@@ -19,12 +19,12 @@ const Header = () => {
         </Link>
         <S.Nav>
           <S.Ul>
-            <S.LinkMenu href="/">Agentes</S.LinkMenu>
+            <S.LinkMenu href="/agents">Agentes</S.LinkMenu>
             <S.LinkMenu href="/">Mapas</S.LinkMenu>
             <S.LinkMenu href="/">Armas</S.LinkMenu>
           </S.Ul>
         </S.Nav>
-        <S.Menu>
+        {/* <S.Menu>
           <div
             className="menuApps p-1"
             onClick={() => {
@@ -33,14 +33,14 @@ const Header = () => {
           >
             {active ? <FiX fontSize={30} /> : <FiMenu fontSize={25} />}
           </div>
-        </S.Menu>
+        </S.Menu> */}
         {/* ////////////////////////////////////////////////////////////////////////////////// */}
       </S.Header>
       <div className={active ? null : 'd-none'}>
         <S.MenuMobile>
           <div className="d-flex flex-column gap-5">
             <ul>
-              <S.LinkMenu href="/">Agentes</S.LinkMenu>
+              <S.LinkMenu href="/agents">Agentes</S.LinkMenu>
               <S.LinkMenu href="/">Mapas</S.LinkMenu>
               <S.LinkMenu href="/">Armas</S.LinkMenu>
             </ul>

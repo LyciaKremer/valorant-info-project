@@ -42,7 +42,7 @@ const Agents = () => {
               key={item?.uuid}
               name={item?.displayName}
               description={item?.description}
-              image={item?.bustPortrait}
+              image={item?.fullPortrait}
             />
           ))}
       </S.Carousel>

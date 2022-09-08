@@ -8,7 +8,8 @@ export const Header = styled.header`
   align-items: center;
   position: relative;
   justify-content: space-between;
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.black};
+  border-bottom: 1px solid #181818;
   height: auto;
   z-index: 10;
 `
@@ -21,7 +22,7 @@ export const LinkMenu = styled.a`
   color: ${({ theme }) => theme.colors.background};
 
   :hover {
-    color: ${({ theme }) => theme.colors.darkRed};
+    color: ${({ theme }) => theme.colors.red};
   }
 `
 

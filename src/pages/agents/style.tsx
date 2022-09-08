@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 import { breakpoints, sizes } from '../../styles/breakpoints'
 
-export const MainAgent = styled.div`
+export const Card = styled.div`
   display: flex;
   padding: 1.75rem;
   gap: 2.938rem;
