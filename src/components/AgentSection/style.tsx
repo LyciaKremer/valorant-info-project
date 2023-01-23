@@ -154,6 +154,22 @@ export const ImagesAgent = styled.div`
   flex-direction: column;
   justify-content: center;
 `
+export const BackgroundImageAgent = styled.div`
+  z-index: 0;
+  position: relative;
+  width: 615px;
+  height: 900px;
+  margin-left: -100px;
+  transform: scale(1.5);
+  object-fit: contain;
+`
+export const ImageAgent = styled.div`
+  position: absolute;
+  z-index: 1;
+  width: 790px;
+  height: 700px;
+  margin-left: -170px;
+`
 export const InfosCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -168,6 +184,9 @@ export const SkillCard = styled.div`
   max-height: 88px;
   background: rgba(255, 255, 255, 0.09);
   border-radius: 6px;
+  :hover {
+    animation: scaleShadow 0.1s linear 0s 1 normal forwards;
+  }
 `
 export const AbilitiesCard = styled.div`
   display: flex;

@@ -34,18 +34,20 @@ const AgentSection = () => {
             <S.Card>
               <S.ContentCard>
                 <S.ImagesAgent>
-                  <Image
-                    src={agent[8].background}
-                    alt="background agent"
-                    width={460}
-                    height={691}
-                  />
-                  <Image
-                    src={agent[8].fullPortrait}
-                    alt="agent"
-                    width={671}
-                    height={691}
-                  />
+                  <S.BackgroundImageAgent>
+                    <Image
+                      src={agent[8].background}
+                      alt="background agent"
+                      layout="fill"
+                    />
+                  </S.BackgroundImageAgent>
+                  <S.ImageAgent>
+                    <Image
+                      src={agent[8].fullPortrait}
+                      alt="agent"
+                      layout="fill"
+                    />
+                  </S.ImageAgent>
                 </S.ImagesAgent>
                 <S.Partition></S.Partition>
                 <S.InfosCard>

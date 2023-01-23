@@ -4,7 +4,7 @@ import { breakpoints, sizes } from '../../styles/breakpoints'
 
 export const Section = styled.section`
   padding: 2.8rem 0;
-  background: ${({ theme }) => theme.colors.fullBlack};
+  background: ${({ theme }) => theme.colors.black};
 
   @media ${breakpoints.lessThan(sizes.widescreen)} {
     padding: 1rem 8vw;

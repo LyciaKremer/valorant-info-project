@@ -49,6 +49,17 @@ export default createGlobalStyle`
       transform-origin: center;
     }
   }
+  @keyframes scaleShadow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      transform: scale(1);
+    }
+
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      transform: scale(1.1);
+    }
+  }
   a {
     cursor: pointer;
     text-decoration: none;
@@ -66,12 +77,12 @@ export default createGlobalStyle`
   }
   h1 {
     font-size: ${props => props.theme.typography.bigger};
-    color: ${props => props.theme.colors.fullBlack};
+    color: ${props => props.theme.colors.black};
     font-weight: 500;
   }
   h2 {
     font-size: ${props => props.theme.typography.normal};
-    color: ${props => props.theme.colors.fullBlack};
+    color: ${props => props.theme.colors.black};
   }
   label {
     font-size: ${props => props.theme.typography.small};
